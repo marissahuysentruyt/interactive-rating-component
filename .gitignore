@@ -1,3 +1,7 @@
+#System Requirements
+.DS_Store
+
+# SCSS
 .sass-cache/
 *.css.map
 *.sass.map
