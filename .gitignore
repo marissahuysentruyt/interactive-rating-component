@@ -1,8 +1,9 @@
-#System Requirements
+# System Requirements
 .DS_Store
 
+# Node modules
+node_modules/
+
 # SCSS
-.sass-cache/
 *.css.map
-*.sass.map
-*.scss.map
+*.css
