@@ -1,0 +1,43 @@
+.rating-start {
+  box-sizing: border-box;
+  background-color: var(--cardBackground);
+  color: var(--text);
+  margin: auto;
+  position: relative;
+  border-radius: 1.5rem; // 24px/16
+  width: 100%;
+  padding: 4rem 2rem 2rem 2rem;
+  border: 1px solid var(--ratingNotHoverBackground);
+
+  // 768px
+  @media (min-width: 48rem) {
+    margin: 3rem auto auto;
+    max-width: 48rem;
+  }
+
+  &::before {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 2rem;
+   left: 2rem;
+   width: 2rem;
+   height: 2rem;
+   border-radius: 50%;
+   background-color: var(--ratingNotHoverBackground);
+   background-image: url("../../images/icon-star.svg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 50%;
+  }
+
+  &__heading {
+    font-size: 1.5rem;
+    letter-spacing: 0.06rem;
+  }
+
+  &__content {
+    font-size: 1rem;
+    letter-spacing: 0.02rem;
+  }
+}

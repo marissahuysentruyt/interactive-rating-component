@@ -1,0 +1,14 @@
+.attribution {
+  margin-top: 3rem;
+  font-size: 0.875rem; 
+  text-align: center;
+  color: var(--text);
+
+  a {
+    color: var(--frontendMentor);
+
+    &:hover {
+      color: var(--selectedButton);
+    }
+  }
+}

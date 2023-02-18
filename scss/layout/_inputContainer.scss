@@ -1,0 +1,7 @@
+.input-container {
+  display: flex;
+  // border: 1px solid red;
+  width: 100%;
+  justify-content: space-between;
+  min-width: calc(300px - 2.5rem);
+}

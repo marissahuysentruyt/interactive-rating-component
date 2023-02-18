@@ -1,0 +1,28 @@
+label {
+  // border: 1px solid blue;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  position: relative;
+  top: 1rem;
+  z-index: 1;
+  text-align: center;
+  color: var(--ratingNotSelectedText);
+  background-color: var(--ratingNotHoverBackground);
+  box-sizing: border-box;
+  transition: all ease-in-out 100ms;
+  font-family: var(--font);
+  overflow: hidden;
+
+  &:hover {
+    color: var(--text);
+    z-index: 2;
+  }
+
+  &[checked="true"] {
+    z-index: 2;
+    color: var(--text);
+  }
+
+}

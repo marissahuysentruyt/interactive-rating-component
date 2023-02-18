@@ -1,0 +1,67 @@
+.rating-end {
+  box-sizing: border-box;
+  color: var(--text);
+  margin: auto;
+  position: relative;
+  border-radius: 1.5rem; // 24px/16
+  width: 100%;
+  padding: 6rem 2rem 2rem 2rem;
+  background-color: var(--ratingNotHoverBackground);
+  overflow: hidden;
+  text-align: center;
+
+  // 440px
+  @media (min-width: 27.5rem) {
+    padding: 8rem 2rem 2rem 2rem;
+  }
+
+  //600px 
+  @media (min-width: 37.5rem) {
+    padding: 12rem 2rem 2rem 2rem;
+  }
+
+  // 768px
+  @media (min-width: 48rem) {
+    margin: 3rem auto auto;
+    max-width: 48rem;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--ratingNotHoverBackground);
+    background-image: url("../../images/illustration-thank-you.svg");
+    background-position: top 1rem center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    z-index: 0;
+   }
+
+  &__heading {
+    font-size: 1.5rem;
+    letter-spacing: 0.06rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__confirmation,
+  &__content {
+    font-size: 1rem;
+    letter-spacing: 0.02rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__confirmation {
+    border-radius: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--selectedButton);
+    padding: 0.5rem 1.25rem ;
+    display: inline-block;
+  }
+}
