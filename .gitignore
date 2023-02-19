@@ -7,3 +7,6 @@ node_modules/
 # SCSS
 *.css.map
 *.css
+
+# compiled css
+dist/

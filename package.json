@@ -2,10 +2,12 @@
   "name": "interactive-rating-component",
   "version": "0.0.0",
   "scripts": {
-    "compile:sass": ""
+    "compile:sass": "sass styles.scss:dist/css/styles.css",
+    "build": "webpack"
   },
   "private": true,
   "devDependencies": {
     "sass": "^1.58.3"
-  }
+  },
+  "dependencies": {}
 }
