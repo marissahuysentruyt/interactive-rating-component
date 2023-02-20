@@ -16,4 +16,8 @@ button[type='button'] {
     color: var(--selectedButton);
     font-weight: var(--boldFont);
   }
+  
+  &[disabled] {
+    background-color: var(--ratingHoverBackground);
+  }
 }
